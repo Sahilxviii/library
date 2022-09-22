@@ -1,0 +1,41 @@
+create database Library ;
+
+use Library
+
+CREATE TABLE Login (
+  Id int AUTO_INCREMENT PRIMARY KEY,
+  Email varchar(40) UNIQUE KEY,
+  Password varchar(40) NOT NULL,
+  UserName varchar(40) NOT NULL,
+  Role varchar(10)
+);
+
+CREATE TABLE Library (
+    Id int AUTO_INCREMENT PRIMARY KEY,
+    Book_name varchar(40),
+    Author_name varchar(40),
+    Publisher_name varchar(40),
+    Pages int,
+    Price int
+);
+
+INSERT INTO Login 
+(Email, Password, Username, Role) 
+VALUES 
+("sahilsawant296@gmail.com", "12345", "Sahil", "student" );
+
+INSERT INTO Login 
+(Email, Password, Username, Role) 
+VALUES 
+("admin@gmail.com", "12345", "Tejas", "admin" );
+
+INSERT INTO Library
+(Book_name, Author_name, Publisher_name, Pages, Price)
+VALUES
+("Django for Beginners", "William S. Vincent", "WelcomeToCode", 343 , 3003);
+
+INSERT INTO Library
+(Book_name, Author_name, Publisher_name, Pages, Price)
+VALUES
+("Django for Beginners", "William S. Vincent", "WelcomeToCode", 343 , 3003);
+

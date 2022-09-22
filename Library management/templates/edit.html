@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    
+    <form action="/update/{{res[0]}}" method="post">
+
+        enter new book name        : <input type="text" name="N_bk_name" value="{{res[1]}}" ><br><br>
+        enter new author name      : <input type="text" name="N_Auth_name" value="{{res[2]}}" ><br><br>
+        enter new publisher name   : <input type="text" name="N_pub_name" value="{{res[3]}}" ><br><br>
+        enter new number of pages  : <input type="text" name="N_pages" value="{{res[4]}}" ><br><br>
+        enter new price            : <input type="text" name="N_price" value="{{res[5]}}" ><br><br>
+        
+    <input type="submit" value="update">
+
+    </form>
+
+</body>
+</html>
